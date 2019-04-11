@@ -1,0 +1,33 @@
+{
+    "name": "blog",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "client-install": "npm install --prefix client",
+        "start": "node app.js",
+        "server": "nodemon app.js",
+        "client": "npm start --prefix client",
+        "dev": "concurrently \"npm run server\" \"npm run client\""
+    },
+    "keywords": [
+        "Blog"
+    ],
+    "author": "easyd",
+    "license": "ISC",
+    "devDependencies": {
+        "nodemon": "^1.18.10"
+    },
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "body-parser": "^1.18.3",
+        "concurrently": "^4.1.0",
+        "express": "^4.16.4",
+        "jsonwebtoken": "^8.5.1",
+        "mongodb": "^3.2.2",
+        "mongoose": "^5.4.20",
+        "passport": "^0.4.0",
+        "passport-jwt": "^4.0.0"
+    }
+}
